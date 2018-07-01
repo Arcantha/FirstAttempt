@@ -1,0 +1,220 @@
+package com.arcantha.avatar.entity.model;
+
+import net.minecraft.client.model.ModelBase;
+import net.minecraft.client.model.ModelBiped;
+import net.minecraft.client.model.ModelRenderer;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
+
+/**
+ * Na'vi Model One - Arcantha
+ * Created using Tabula 7.0.0
+ */
+public class PlayerNaviModelOne extends ModelBiped {
+    public ModelRenderer Head;
+    public ModelRenderer Neck;
+    public ModelRenderer Ear1;
+    public ModelRenderer Ear2;
+    public ModelRenderer Hair1;
+    public ModelRenderer Nose;
+    public ModelRenderer Chest;
+    public ModelRenderer Torso;
+    public ModelRenderer Shoulder1;
+    public ModelRenderer Shoulder2;
+    public ModelRenderer Torso2;
+    public ModelRenderer Torso3;
+    public ModelRenderer Thigh1;
+    public ModelRenderer Thigh2;
+    public ModelRenderer Tail1;
+    public ModelRenderer Thigh11;
+    public ModelRenderer Knee1;
+    public ModelRenderer Leg1;
+    public ModelRenderer Foot1;
+    public ModelRenderer Thigh22;
+    public ModelRenderer Knee2;
+    public ModelRenderer Leg2;
+    public ModelRenderer Foot2;
+    public ModelRenderer Tail2;
+    public ModelRenderer Tail3;
+    public ModelRenderer Bicep1;
+    public ModelRenderer Tricep1;
+    public ModelRenderer Hand1;
+    public ModelRenderer Bicep2;
+    public ModelRenderer Tricep2;
+    public ModelRenderer Hand2;
+    public ModelRenderer Hair2;
+    public ModelRenderer Hair3;
+    public ModelRenderer Hair4;
+
+    public PlayerNaviModelOne() {
+        this.textureWidth = 256;
+        this.textureHeight = 256;
+        this.Hair2 = new ModelRenderer(this, 0, 0);
+        this.Hair2.setRotationPoint(2.5F, 5.0F, 3.0F);
+        this.Hair2.addBox(0.0F, 0.0F, 0.0F, 4, 4, 4, 0.0F);
+        this.Knee2 = new ModelRenderer(this, 0, 0);
+        this.Knee2.setRotationPoint(0.5F, 13.0F, -0.5F);
+        this.Knee2.addBox(0.0F, 0.0F, 0.0F, 6, 6, 6, 0.0F);
+        this.setRotateAngle(Knee2, 0.045553093477052F, 0.0F, 0.0F);
+        this.Foot1 = new ModelRenderer(this, 0, 0);
+        this.Foot1.setRotationPoint(0.0F, 15.0F, -5.0F);
+        this.Foot1.addBox(0.0F, 0.0F, 0.0F, 5, 4, 11, 0.0F);
+        this.Shoulder2 = new ModelRenderer(this, 0, 0);
+        this.Shoulder2.setRotationPoint(10.0F, 0.0F, 1.0F);
+        this.Shoulder2.addBox(0.0F, 0.0F, 0.0F, 6, 6, 6, 0.0F);
+        this.Thigh22 = new ModelRenderer(this, 0, 0);
+        this.Thigh22.setRotationPoint(-2.0F, 5.0F, 0.0F);
+        this.Thigh22.addBox(0.0F, 0.0F, 0.0F, 7, 15, 7, 0.0F);
+        this.setRotateAngle(Thigh22, -0.045553093477052F, 0.0F, 0.0F);
+        this.Foot2 = new ModelRenderer(this, 0, 0);
+        this.Foot2.setRotationPoint(0.0F, 15.0F, -5.0F);
+        this.Foot2.addBox(0.0F, 0.0F, 0.0F, 5, 4, 11, 0.0F);
+        this.Hair3 = new ModelRenderer(this, 0, 0);
+        this.Hair3.setRotationPoint(0.5F, 0.0F, 0.8F);
+        this.Hair3.addBox(0.0F, 0.0F, 0.0F, 3, 11, 2, 0.0F);
+        this.setRotateAngle(Hair3, 0.18203784098300857F, 0.0F, 0.0F);
+        this.Torso3 = new ModelRenderer(this, 0, 0);
+        this.Torso3.setRotationPoint(0.0F, 4.0F, -0.5F);
+        this.Torso3.addBox(0.0F, 0.0F, 0.0F, 8, 6, 6, 0.0F);
+        this.Tail1 = new ModelRenderer(this, 0, 0);
+        this.Tail1.setRotationPoint(2.0F, 4.3F, 5.1F);
+        this.Tail1.addBox(0.0F, 0.0F, 0.0F, 4, 4, 4, 0.0F);
+        this.Tricep2 = new ModelRenderer(this, 0, 0);
+        this.Tricep2.setRotationPoint(0.5F, 8.0F, 0.5F);
+        this.Tricep2.addBox(0.0F, 0.0F, 0.0F, 3, 11, 3, 0.0F);
+        this.setRotateAngle(Tricep2, -0.13913389021875522F, 0.0F, 0.0F);
+        this.Ear2 = new ModelRenderer(this, 0, 0);
+        this.Ear2.setRotationPoint(8.5F, 0.0F, 4.0F);
+        this.Ear2.addBox(0.0F, 0.0F, 0.0F, 1, 5, 2, 0.0F);
+        this.setRotateAngle(Ear2, -0.22759093446006054F, 0.0F, 0.091106186954104F);
+        this.Tail2 = new ModelRenderer(this, 0, 0);
+        this.Tail2.setRotationPoint(0.5F, 1.1F, 2.2F);
+        this.Tail2.addBox(0.0F, 0.0F, 0.0F, 3, 11, 2, 0.0F);
+        this.setRotateAngle(Tail2, 0.18203784098300857F, 0.0F, 0.0F);
+        this.Thigh2 = new ModelRenderer(this, 0, 0);
+        this.Thigh2.setRotationPoint(-2.0F, 5.0F, 0.0F);
+        this.Thigh2.addBox(0.0F, 0.0F, 0.0F, 7, 6, 8, 0.0F);
+        this.Head = new ModelRenderer(this, 0, 0);
+        this.Head.setRotationPoint(-4.5F, -56.3F, -4.5F);
+        this.Head.addBox(0.0F, 0.0F, 0.0F, 8, 9, 8, 0.0F);
+        this.Leg1 = new ModelRenderer(this, 0, 0);
+        this.Leg1.setRotationPoint(0.5F, 5.5F, 1.5F);
+        this.Leg1.addBox(0.0F, 0.0F, 0.0F, 5, 16, 5, 0.0F);
+        this.setRotateAngle(Leg1, 0.045553093477052F, 0.0F, 0.0F);
+        this.Bicep2 = new ModelRenderer(this, 0, 0);
+        this.Bicep2.setRotationPoint(2.5F, 5.0F, 1.0F);
+        this.Bicep2.addBox(0.0F, 0.0F, 0.0F, 4, 9, 4, 0.0F);
+        this.setRotateAngle(Bicep2, 0.0F, 0.0F, -0.091106186954104F);
+        this.Ear1 = new ModelRenderer(this, 0, 0);
+        this.Ear1.setRotationPoint(-1.5F, 0.0F, 4.0F);
+        this.Ear1.addBox(0.0F, 0.0F, 0.0F, 1, 5, 2, 0.0F);
+        this.setRotateAngle(Ear1, -0.22759093446006054F, 0.0F, -0.091106186954104F);
+        this.Hair1 = new ModelRenderer(this, 0, 0);
+        this.Hair1.setRotationPoint(-0.5F, -0.5F, 2.5F);
+        this.Hair1.addBox(0.0F, 0.0F, 0.0F, 9, 8, 6, 0.0F);
+        this.Chest = new ModelRenderer(this, 0, 0);
+        this.Chest.setRotationPoint(-3.5F, 4.7F, -2.6F);
+        this.Chest.addBox(0.0F, 0.0F, 0.0F, 12, 8, 9, 0.0F);
+        this.Tail3 = new ModelRenderer(this, 0, 0);
+        this.Tail3.setRotationPoint(0.0F, 10.0F, 0.0F);
+        this.Tail3.addBox(0.0F, 0.0F, 0.0F, 3, 11, 2, 0.0F);
+        this.setRotateAngle(Tail3, -0.136659280431156F, 0.0F, 0.0F);
+        this.Torso2 = new ModelRenderer(this, 0, 0);
+        this.Torso2.setRotationPoint(1.0F, 6.0F, 0.0F);
+        this.Torso2.addBox(0.0F, 0.0F, 0.0F, 8, 6, 5, 0.0F);
+        this.Bicep1 = new ModelRenderer(this, 0, 0);
+        this.Bicep1.setRotationPoint(-0.5F, 5.0F, 0.0F);
+        this.Bicep1.addBox(0.0F, 0.0F, 0.0F, 4, 9, 4, 0.0F);
+        this.setRotateAngle(Bicep1, 0.0F, 0.0F, 0.045553093477052F);
+        this.Thigh11 = new ModelRenderer(this, 0, 0);
+        this.Thigh11.setRotationPoint(2.0F, 5.0F, 0.0F);
+        this.Thigh11.addBox(0.0F, 0.0F, 0.0F, 7, 15, 7, 0.0F);
+        this.setRotateAngle(Thigh11, -0.045553093477052F, 0.0F, 0.0F);
+        this.Hand2 = new ModelRenderer(this, 0, 0);
+        this.Hand2.setRotationPoint(0.0F, 9.0F, 0.0F);
+        this.Hand2.addBox(0.0F, 0.0F, 0.0F, 3, 6, 3, 0.0F);
+        this.setRotateAngle(Hand2, 0.02339519918542599F, 0.0F, 0.0F);
+        this.Shoulder1 = new ModelRenderer(this, 0, 0);
+        this.Shoulder1.setRotationPoint(-4.0F, 0.0F, 1.0F);
+        this.Shoulder1.addBox(0.0F, 0.0F, 0.0F, 6, 6, 6, 0.0F);
+        this.Knee1 = new ModelRenderer(this, 0, 0);
+        this.Knee1.setRotationPoint(0.5F, 13.0F, -0.5F);
+        this.Knee1.addBox(0.0F, 0.0F, 0.0F, 6, 6, 6, 0.0F);
+        this.setRotateAngle(Knee1, 0.045553093477052F, 0.0F, 0.0F);
+        this.Tricep1 = new ModelRenderer(this, 0, 0);
+        this.Tricep1.setRotationPoint(0.5F, 8.0F, 0.5F);
+        this.Tricep1.addBox(0.0F, 0.0F, 0.0F, 3, 11, 3, 0.0F);
+        this.setRotateAngle(Tricep1, -0.13910274138394807F, 0.0F, 0.0F);
+        this.Hand1 = new ModelRenderer(this, 0, 0);
+        this.Hand1.setRotationPoint(0.0F, 9.0F, 0.0F);
+        this.Hand1.addBox(0.0F, 0.0F, 0.0F, 3, 6, 3, 0.0F);
+        this.setRotateAngle(Hand1, 0.023387411976724014F, 0.0F, 0.0F);
+        this.Hair4 = new ModelRenderer(this, 0, 0);
+        this.Hair4.setRotationPoint(0.0F, 10.0F, 0.0F);
+        this.Hair4.addBox(0.0F, 0.0F, 0.0F, 3, 11, 2, 0.0F);
+        this.setRotateAngle(Hair4, -0.136659280431156F, 0.0F, 0.0F);
+        this.Thigh1 = new ModelRenderer(this, 0, 0);
+        this.Thigh1.setRotationPoint(3.0F, 5.0F, 0.0F);
+        this.Thigh1.addBox(0.0F, 0.0F, 0.0F, 7, 6, 8, 0.0F);
+        this.Neck = new ModelRenderer(this, 0, 0);
+        this.Neck.setRotationPoint(2.0F, 8.0F, 2.0F);
+        this.Neck.addBox(0.0F, 0.0F, 0.0F, 5, 6, 5, 0.0F);
+        this.Torso = new ModelRenderer(this, 0, 0);
+        this.Torso.setRotationPoint(1.0F, 6.0F, 2.0F);
+        this.Torso.addBox(0.0F, 0.0F, 0.0F, 10, 6, 6, 0.0F);
+        this.Leg2 = new ModelRenderer(this, 0, 0);
+        this.Leg2.setRotationPoint(0.5F, 5.5F, 1.5F);
+        this.Leg2.addBox(0.0F, 0.0F, 0.0F, 5, 16, 5, 0.0F);
+        this.setRotateAngle(Leg2, 0.045553093477052F, 0.0F, 0.0F);
+        this.Nose = new ModelRenderer(this, 0, 0);
+        this.Nose.setRotationPoint(3.0F, 3.0F, -0.5F);
+        this.Nose.addBox(0.0F, 0.0F, 0.0F, 2, 3, 1, 0.0F);
+        this.Hair1.addChild(this.Hair2);
+        this.Thigh22.addChild(this.Knee2);
+        this.Leg1.addChild(this.Foot1);
+        this.Chest.addChild(this.Shoulder2);
+        this.Thigh2.addChild(this.Thigh22);
+        this.Leg2.addChild(this.Foot2);
+        this.Hair2.addChild(this.Hair3);
+        this.Torso2.addChild(this.Torso3);
+        this.Torso3.addChild(this.Tail1);
+        this.Bicep2.addChild(this.Tricep2);
+        this.Head.addChild(this.Ear2);
+        this.Tail1.addChild(this.Tail2);
+        this.Torso3.addChild(this.Thigh2);
+        this.Knee1.addChild(this.Leg1);
+        this.Shoulder2.addChild(this.Bicep2);
+        this.Head.addChild(this.Ear1);
+        this.Head.addChild(this.Hair1);
+        this.Neck.addChild(this.Chest);
+        this.Tail2.addChild(this.Tail3);
+        this.Torso.addChild(this.Torso2);
+        this.Shoulder1.addChild(this.Bicep1);
+        this.Thigh1.addChild(this.Thigh11);
+        this.Tricep2.addChild(this.Hand2);
+        this.Chest.addChild(this.Shoulder1);
+        this.Thigh11.addChild(this.Knee1);
+        this.Bicep1.addChild(this.Tricep1);
+        this.Tricep1.addChild(this.Hand1);
+        this.Hair3.addChild(this.Hair4);
+        this.Torso3.addChild(this.Thigh1);
+        this.Head.addChild(this.Neck);
+        this.Chest.addChild(this.Torso);
+        this.Knee2.addChild(this.Leg2);
+        this.Head.addChild(this.Nose);
+    }
+
+    @Override
+    public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) { 
+        this.Head.render(f5);
+    }
+
+    /**
+     * This is a helper function from Tabula to set the rotation of model parts
+     */
+    public void setRotateAngle(ModelRenderer modelRenderer, float x, float y, float z) {
+        modelRenderer.rotateAngleX = x;
+        modelRenderer.rotateAngleY = y;
+        modelRenderer.rotateAngleZ = z;
+    }
+}
